@@ -6,7 +6,7 @@ $this->headMeta()->setCharset('utf-8');
 $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1');
 $this->headTitle($siteTitle)->setSeparator(' · ');
 $this->headTitle()->append($this->setting('installation_title', 'Omeka S'));
-$this->headLink()->prependStylesheet('//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'));
+$this->headLink()->prependStylesheet('//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
 $this->headLink()->prependStylesheet($this->assetUrl('css/site.css'));
 $this->headLink()->prependStylesheet($this->assetUrl('css/iconfonts.css', 'Omeka'));
 $this->headLink()->prependStylesheet('//fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Rubik&Roboto:wght@300;400;500;700&Space+Grotesk:wght@500&display=swap');
