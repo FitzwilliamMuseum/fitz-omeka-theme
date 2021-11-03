@@ -12,7 +12,7 @@ $this->headLink()->prependStylesheet($this->assetUrl('css/iconfonts.css', 'Omeka
 $this->headLink()->prependStylesheet('//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Bitter:700');
 $this->headScript()->prependFile($this->assetUrl('js/global.js', 'Omeka'));
 $this->headScript()->prependFile($this->assetUrl('vendor/jquery/jquery.min.js', 'Omeka'));
-$this->inlineScript()->prependFile($this->assetUrl('js/offcanvas.js'));
+$this->inlineScript()->prependFile($this->assetUrl('js/offcanvas.js', 'Omeka'));
 $this->trigger('view.layout');
 $userBar = $this->userBar();
 ?>
@@ -92,6 +92,5 @@ $userBar = $this->userBar();
             </div>
         </div>
         <?php echo $this->inlineScript(); ?>
-        <script type="text/javascript" src="<?php echo $this->assetUrl('js/offcanvas.js'); ?>"></script>
     </body>
 </html>
