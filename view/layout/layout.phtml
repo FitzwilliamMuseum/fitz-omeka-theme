@@ -64,6 +64,11 @@ $userBar = $this->userBar();
   #user-bar {
     background-color: #343a40!important;
   }
+  #user-bar .admin:not(:last-child):after {
+    content: "/";
+    margin: 0 12px;
+    color: white;
+  }
   </style>
   <?php echo $this->headScript(); ?>
 </head>
