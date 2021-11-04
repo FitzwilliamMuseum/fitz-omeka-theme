@@ -1,6 +1,6 @@
 
 .parallax {
-  min-height: 65vh;
+  min-height: 45vh;
   background-attachment: fixed;
   background-size: cover;
   margin-top: 0px!important;
@@ -393,8 +393,8 @@ label.cm-app-label {
 }
 @media screen and (min-width: 440px) {
   .shout {
-    font-size: 5rem;
-    font-weight: 500;
+    font-size: 5rem !important;
+    font-weight: 500!important;
   }
   .shout-less {
     font-size: 4rem;
