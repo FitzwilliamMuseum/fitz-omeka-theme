@@ -3,10 +3,7 @@
         <span class="doc-skip-text">Skip to main content</span>
     </div>
 </a>
-<nav id="menu" class="oc-menu oc-push" role="navigation">
-  <?php echo $site->publicNav()->menu()->renderMenu(); ?>
-</nav>
-  <!-- Nav bars -->
+<!-- Nav bars -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
   <a class="navbar-brand" href="https://www.fitzmuseum.cam.ac.uk">
     <img src="https://www.fitzmuseum.cam.ac.uk/images/logos/Fitz_logo_white.png" alt="The Fitzwilliam Museum Logo" height="60" width="66.66" class="ml-1 mr-1">
@@ -17,37 +14,11 @@
 </button>
 <div class="collapse navbar-collapse" id="navbarText">
   <ul class="navbar-nav mr-auto">
+    <?php echo $site->publicNav()->menu()->renderMenu(); ?>
     <li class="nav-item active">
       <a class="nav-link" href="https://www.fitzmuseum.cam.ac.uk">Home <span class="sr-only">(current)</span></a>
     </li>
-    <li class="nav-item ">
-      <a class="nav-link" href="https://www.fitzmuseum.cam.ac.uk/visit-us" >Visit</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link" href="https://www.fitzmuseum.cam.ac.uk/events">Events & tickets</a>
-    </li>
 
-    <li class="nav-item ">
-      <a class="nav-link" href="https://www.fitzmuseum.cam.ac.uk/objects-and-artworks">Our Collection</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link" href="https://www.fitzmuseum.cam.ac.uk/learning">
-      Learning</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link " href="https://www.fitzmuseum.cam.ac.uk/about-us">
-      About</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link " href="https://www.fitzmuseum.cam.ac.uk/support-us">
-      Support Us</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link" href="https://www.fitzmuseum.cam.ac.uk/research">Research</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link" href="https://curatingcambridge.co.uk/collections/the-fitzwilliam-museum">Shop</a>
-    </li>
 </ul>
 <form method="GET" action="https://www.fitzmuseum.cam.ac.uk/search/results" accept-charset="UTF-8" class="form-inline ml-auto">
   <label for="search" class="sr-only">Search: </label>
