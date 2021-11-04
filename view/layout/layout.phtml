@@ -55,12 +55,7 @@ $userBar = $this->userBar();
     </style>
   <?php endif; ?>
   <style>
-  .head {
-    background-image: url('https://content.fitz.ms/fitz-website/assets/gallery_26_odundo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 30%;
-  }
+  
   #user-bar {
     background-color: #343a40!important;
   }
@@ -75,9 +70,6 @@ $userBar = $this->userBar();
 
 <body class="bg-grey">
   <?php echo $this->partial('common/header'); ?>
-  <nav id="menu" class="oc-menu oc-push" role="navigation">
-    <?php echo $site->publicNav()->menu()->renderMenu(); ?>
-  </nav>
   <div class="container-fluid bg-dark py-3">
     <?php echo $userBar; ?>
   </div>
