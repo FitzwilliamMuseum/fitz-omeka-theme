@@ -8,7 +8,7 @@
               if($page->isActive()) {
                 echo 'class="nav-item active"';
               } else {
-                echo 'class="nav-item active"';
+                echo 'class="nav-item"';
               } ?> role="presentation">
                   <a class="nav-link" href="<?php echo $page->getHref() ?>">
                       <?php echo $this->translate($page->getLabel()) ?>
