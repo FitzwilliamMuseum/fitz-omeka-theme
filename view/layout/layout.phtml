@@ -75,6 +75,9 @@ $userBar = $this->userBar();
 
 <body class="bg-grey">
   <?php echo $this->partial('common/header'); ?>
+  <nav id="menu" class="oc-menu oc-push" role="navigation">
+    <?php echo $site->publicNav()->menu()->renderMenu(); ?>
+  </nav>
   <div class="container-fluid bg-dark py-3">
     <?php echo $userBar; ?>
   </div>
@@ -83,9 +86,7 @@ $userBar = $this->userBar();
       <div class="oc-pusher col-12 shadow-sm p-3 mx-auto mb-3">
 
         <?php echo $this->partial('common/search-form'); ?>
-        <nav id="menu" class="oc-menu oc-push" role="navigation">
-          <?php echo $site->publicNav()->menu()->renderMenu(); ?>
-        </nav>
+
         <main class="oc-content" role="main">
           <div class="oc-content-inner">
             <div id="content" role="main">
