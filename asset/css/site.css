@@ -1031,3 +1031,7 @@ a.nav-link {
 .media {
   display: inline!important;
 }
+#mapping-section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
