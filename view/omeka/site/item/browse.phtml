@@ -63,7 +63,7 @@ foreach ($items as $item):
 ?>
 <div class="col-md-4">
   <div class="card" >
-    <?php if ($itemThumbnail = $this->thumbnail($item, 'square', $attribs['class' => 'card-img-top'])): ?>
+    <?php if ($itemThumbnail = $this->thumbnail($item, 'square', ['class' => 'card-img-top'])): ?>
       <?php echo $item->linkRaw($itemThumbnail); ?>
     <?php endif; ?>
     <div class="card-body">
