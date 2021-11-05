@@ -60,7 +60,7 @@ $sortHeadings = [
             $body = $bodyTerm ? $item->value($bodyTerm) : $item->displayDescription();
         ?>
             <li class="item resource">
-                <?php echo $item->linkRaw($this->thumbnail($item, 'medium')); ?>
+                <?php echo $item->linkRaw($this->thumbnail($item, 'large')); ?>
                 <h4><?php echo $item->link($heading); ?></h4>
                 <?php if ($body) : ?>
                     <div class="description"><?php echo $escape($body); ?></div>
