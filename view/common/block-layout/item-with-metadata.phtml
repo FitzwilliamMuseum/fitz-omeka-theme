@@ -9,7 +9,7 @@ $translate = $this->plugin('translate');
     <?php echo $item->displayValues(); ?>
     <?php if($item->itemSets()): ?>
         <div class="property">
-            <h4><?php echo $translate('Item sets'); ?></h4>
+            <h4 class="lead"><?php echo $translate('Item sets'); ?></h4>
             <div class="values">
                 <?php foreach ($item->itemSets() as $itemSet): ?>
                 <div class="value"><?php echo $itemSet->link($itemSet->displayTitle()); ?></div>
