@@ -1019,6 +1019,15 @@ a.nav-link {
   margin: 0 12px;
   color: white;
 }
+#user-bar a {
+    color: #fff!important;
+    background-color: transparent;
+}
+#user-bar a:hover {
+    color: #fff!important;
+    background-color: transparent;
+    text-decoration: underline!important;
+}
 .media {
-  display: inline;
+  display: inline!important;
 }
