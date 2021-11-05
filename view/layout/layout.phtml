@@ -17,7 +17,6 @@ $this->headScript()->prependFile('https://code.jquery.com/jquery-3.5.1.slim.min.
 $this->inlineScript()->prependFile($this->assetUrl('js/klaro.js'));
 $this->inlineScript()->prependFile($this->assetUrl('js/config.js'));
 $this->inlineScript()->prependFile($this->assetUrl('js/backtotop.js'));
-$this->inlineScript()->prependFile($this->assetUrl('js/offcanvas.js'));
 $this->trigger('view.layout');
 $userBar = $this->userBar();
 ?>
@@ -78,7 +77,7 @@ $userBar = $this->userBar();
       <div class="oc-pusher col-12 shadow-sm p-3 mx-auto mb-3">
 
         <?php
-        //echo $this->partial('common/search-form'); 
+        //echo $this->partial('common/search-form');
         ?>
 
         <main class="oc-content" role="main">
