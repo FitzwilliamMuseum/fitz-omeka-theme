@@ -62,7 +62,7 @@ foreach ($items as $item):
     $body = $bodyTerm ? $item->value($bodyTerm, ['lang' => ($filterLocale ? [$lang, ''] : null)]) : $item->displayDescription(null, ($filterLocale ? [$lang, ''] : null));
 ?>
 <div class="col-md-4">
-  <div class="card" >
+  <div class="card h-100" >
     <?php if ($itemThumbnail = $this->thumbnail($item, 'square', ['class' => 'card-img-top'])): ?>
       <?php echo $item->linkRaw($itemThumbnail); ?>
     <?php endif; ?>
