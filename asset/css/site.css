@@ -1036,5 +1036,5 @@ a.nav-link {
   margin-bottom: 15px;
 }
 .resource_name {
-  display: block;
+  display: block!important;
 }
