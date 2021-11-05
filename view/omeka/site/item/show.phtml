@@ -42,7 +42,9 @@ $lang = $this->lang();
 <?php if (!$embedMedia && $itemMedia): ?>
 <div class="media-list">
     <?php foreach ($itemMedia as $media): ?>
-        <?php echo $media->linkPretty(); ?>
+       <figure class="figure">
+         <?php echo $media->linkPretty(); ?>
+        </figure>
     <?php endforeach; ?>
 </div>
 <?php endif; ?>
