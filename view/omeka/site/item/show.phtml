@@ -43,7 +43,7 @@ $lang = $this->lang();
 <div class="media-list">
     <?php foreach ($itemMedia as $media): ?>
        <figure class="figure">
-         <?php echo $media->linkPretty('large', null, null, $attributes['class' => 'img-fluid']); ?>
+         <?php echo $media->linkPretty('large', null, null, ['class' => 'img-fluid']); ?>
         </figure>
     <?php endforeach; ?>
 </div>
