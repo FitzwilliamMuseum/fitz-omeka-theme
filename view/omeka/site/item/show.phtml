@@ -4,13 +4,12 @@ $escape = $this->plugin('escapeHtml');
 $this->htmlElement('body')->appendAttribute('class', 'item resource show');
 $embedMedia = $this->siteSetting('item_media_embed', false);
 $itemMedia = $item->media();
-
 $filterLocale = (bool) $this->siteSetting('filter_locale_values');
 $lang = $this->lang();
 ?>
 
 <?php echo $this->pageTitle($item->displayTitle(null, ($filterLocale ? $lang : null)), 2); ?>
-<h3 class="lead"><?php echo $translate('Item'); ?></h3>
+<h3 class="lead text-info"><?php echo $translate('Item'); ?></h3>
 <?php $this->trigger('view.show.before'); ?>
 <?php if ($embedMedia && $itemMedia): ?>
     <div class="media-embeds">
