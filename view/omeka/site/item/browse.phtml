@@ -41,7 +41,7 @@ $sortHeadings = [
     <div class="item-set-items">
     <?php echo '<h3>' . $escape($translate('Items')) . '</h3>'; ?>
 <?php else: ?>
-    <?php echo $this->pageTitle($translate('Object records'), 2)->appendAttribute('class', 'lead'); ?>
+    <h2 class="lead text-info"><?php echo $this->pageTitle($translate('Object records'), 2); ?></h2>
 <?php endif; ?>
 
 <?php echo $this->searchFilters(); ?>
