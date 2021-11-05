@@ -47,12 +47,12 @@ $sortHeadings = [
 <?php echo $this->searchFilters(); ?>
 
 <div class="browse-controls">
-    <?php echo $this->hyperlink($translate('Advanced search'), $this->url('site/resource', ['controller' => 'item', 'action' => 'search'], ['query' => $query], true), ['class' => 'advanced-search btn btn-dark']); ?>
+    <?php echo $this->hyperlink($translate('Advanced search'), $this->url('site/resource', ['controller' => 'item', 'action' => 'search'], ['query' => $query], true), ['class' => 'advanced-search btn btn-dark my-2']); ?>
     <?php echo $this->sortSelector($sortHeadings); ?>
 </div>
 
 <?php $this->trigger('view.browse.before'); ?>
-<div class="row py-2 my-2 bg-gdbo">
+<div class="row py-4 px-2 my-2 bg-gdbo">
 <?php
 $headingTerm = $this->siteSetting('browse_heading_property_term');
 $bodyTerm = $this->siteSetting('browse_body_property_term');
