@@ -1035,3 +1035,6 @@ a.nav-link {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.resource_name {
+  display: block;
+}
