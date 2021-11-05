@@ -28,7 +28,9 @@ if ($this->status()->isSiteRequest()) {
         <?php endif; ?>
         </h4>
         <div class="values">
+          <ul>
         <?php foreach ($propertyData['values'] as $value): ?>
+          <li>
             <?php
             $valueType = $value->type();
             $valueLang = $value->lang();
@@ -51,7 +53,9 @@ if ($this->status()->isSiteRequest()) {
                 <?php echo $filterLocale ? $value->asHtml($lang) : $value->asHtml(); ?>
             </div>
             <?php endif; ?>
+          </li>
         <?php endforeach; ?>
+      </ul>
         </div>
     </div>
 <?php endforeach; ?>
