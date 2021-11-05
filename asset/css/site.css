@@ -1010,3 +1010,15 @@ a.nav-link {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
+#user-bar {
+  background-color: #343a40!important;
+}
+#user-bar .admin:not(:last-child):after {
+  content: "/";
+  margin: 0 12px;
+  color: white;
+}
+.media {
+  display: inline;
+}
