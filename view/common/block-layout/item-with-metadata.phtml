@@ -19,13 +19,15 @@ $translate = $this->plugin('translate');
     <?php endif; ?>
     <?php if($item->media()): ?>
         <div class="media-list">
-        <?php
-        foreach ($item->media() as $media):
-            echo $media->linkRaw($this->thumbnail($media, 'medium', ['title' => $media->displayTitle()]), null, [
-                'class' => 'media resource'
+        <?php foreach ($item->media() as $media): ?>
+          <figure class="figure">
+          <?php
+          echo $media->linkRaw($this->thumbnail($media, 'large', ['title' => $media->displayTitle()]), null, [
+                'class' => 'media resource img-fluid'
             ]);
-        endforeach;
-        ?>
+            ?>
+          </figure>
+        <?php endforeach; ?>
         </div>
     <?php endif; ?>
     </div>
