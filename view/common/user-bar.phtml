@@ -1,11 +1,12 @@
-<?php
-$translate = $this->plugin('translate');
-$hyperlink = $this->plugin('hyperlink');
-$urlHelper = $this->plugin('url');
-$this->headLink()->prependStylesheet($this->assetUrl('css/user-bar.css', 'Omeka'));
-?>
-<div id="user-bar">
 <?php if ($user): ?>
+	<?php
+	$translate = $this->plugin('translate');
+	$hyperlink = $this->plugin('hyperlink');
+	$urlHelper = $this->plugin('url');
+	$this->headLink()->prependStylesheet($this->assetUrl('css/user-bar.css', 'Omeka'));
+	?>
+<div id="user-bar">
+
 	<div class="site-links">
     <?php foreach ($links as $link): ?>
 	    <span class="admin <?php echo $link['resource'] . ' ' . $link['action']; ?>">
@@ -23,7 +24,6 @@ $this->headLink()->prependStylesheet($this->assetUrl('css/user-bar.css', 'Omeka'
 	    </span>
         <?php echo $hyperlink($translate('Logout'), $urlHelper('logout'), ['class' => 'logout']); ?>
 	</div>
-<?php else: ?>
-    <?php echo $hyperlink($translate('Log in'), $urlHelper('login'), ['class' => 'login']); ?>
-<?php endif; ?>
+
 </div>
+<?php endif; ?>
